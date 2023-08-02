@@ -17,57 +17,50 @@
 <body class="body loading">
 	<main class="app">
 		<div class="frame">
-			<div class="frame__demos">
-				<a href="index.html" class="frame__demo frame__demo--current">Demo 1</a>
-				<a href="index2.html" class="frame__demo">Demo 2</a>
-				<a href="index3.html" class="frame__demo">Demo 3</a>
-			</div>
-			<div class="frame__wrap">
-				<div class="frame__credits">
-					<div class="credit-wrap">
-						<div class="frame__role">art direction / dev / photography</div>
-						<a aria-label="credit-1" rel="noopener" target="_blank" draggable="false" href="https://twitter.com/niccolomiranda" class="frame__link">Niccolò miranda</a>
-					</div>
-					<div class="credit-wrap">
-						<div class="frame__role">Development</div>
-						<a aria-label="credit-2" rel="noopener" target="_blank" draggable="false" href="https://twitter.com/clementroche_" class="frame__link">Clément roche</a>
-					</div>
-				</div>
-				<div class="frame__title-wrap">
-					<div class="frame__init"><em class="italic">presents</em></div>
-					<div class="frame__title">
-						<span class="span_1">How to Create Motion Hover Effects</span><br /><span class="span_2">with Image Distortions using Three.js</span>
-					</div>
-				</div>
-				<div class="frame__links">
-					<div class="frame__inner">
-						<a aria-label="frame-link" rel="noopener" target="_blank" draggable="false" href="https://tympanus.net/Tutorials/Interactive3DCharacter/" class="frame__link fl_1">Previous demo</a><a aria-label="frame-article" rel="noopener" target="_blank" draggable="false" href="https://tympanus.net/codrops/?p=44003" class="frame__link fl_1">Article</a>
-					</div>
-				</div>
-			</div>
 		</div>
 		<div class="grid">
 			<div class="grid-items">
+				<div class="divider"></div>
 				<a aria-label="link-1" target="_blank" rel="noopener" draggable="false" class="link w-inline-block">
-					<h1 class="h1">montmartre</h1>
-					<div class="text">cemetery, paris</div>
-					<img class="content__img" src="img/demo1/img1.jpg" alt="img1" />
+					<h1 class="h1">3D Artist</h1>
+					<div class="text">
+						Blender, Photoshop, Three JS, Babylon JS
+					</div>
+					<div class="text out-links" id="portfolio-3d">
+						<p>Portfolio</p>
+					</div>
+					<img class="content__img" src="img/demo1/img3.png" alt="img3" />
+					
 				</a>
 				<div class="divider"></div>
 				<a aria-label="link-2" target="_blank" rel="noopener" draggable="false" class="link w-inline-block">
-					<h1 class="h1">bir-hakem</h1>
-					<div class="text">bridge, paris</div>
-					<img class="content__img" src="img/demo1/img2.jpg" alt="img2"/>
+					<h1 class="h1">Programmer</h1>
+					<div class="text">C++, Python, Javascript, Java</div>
+					<div class="text out-links" id="github">
+						<p>GitHub</p>
+					</div>
+					<img class="content__img" src="img/demo1/turbo_c_3050.webp" alt="img2"/>
 				</a>
 			</div>
 			<div class="grid-items g2">
 				<div class="divider d2"></div>
 				<a aria-label="link-3" target="_blank" rel="noopener" draggable="false" class="link w-inline-block">
-					<h1 class="h1">république</h1>
-					<div class="text">people, paris</div>
-					<img class="content__img" src="img/demo1/img3.jpg" alt="img3" />
-				</a>
-				<div class="divider d3"></div>
+					<h1 class="h1">Web development</h1>
+					<div class="text">React JS, Node JS, Material UI, Next JS</div>
+					<div class="text out-links" id="webdev">
+						<p>Website</p>
+					</div>
+					<img class="content__img" src="img/demo1/0_MZN4EDkeFMLexrLq.jpg" alt="img1" />
+				</a>				
+				<div class="divider"></div>
+				<a aria-label="link-4" target="_blank" rel="noopener" draggable="false" class="link w-inline-block">
+					<h1 class="h1">Computer Graphics</h1>
+					<div class="text">open3d, opengl, p5js, webgl</div>
+					<div class="text out-links" id="p5js">
+						<p>Projects</p>
+					</div>
+					<img class="content__img" src="img/demo1/1654423413590.jpeg" alt="img2"/>
+				</a> 
 			</div>
 		</div>
 	</main>
@@ -91,7 +84,19 @@
     preloadImages().then(() => {
         // Remove the loader
         document.body.classList.remove('loading');
-        const effect = new RGBShiftEffect(container, itemsWrapper, { strength: 0.25 })
+        const effect = new RGBShiftEffect(container, itemsWrapper, { strength: 0.5 })
+		document.getElementById('portfolio-3d').addEventListener('click', ()=>{
+			window.open("https://moaaz-rafique.github.io/portfolio")
+		})
+		document.getElementById('p5js').addEventListener('click', ()=>{
+			window.open("https://editor.p5js.org/Mzr/sketches")
+		})
+		document.getElementById('github').addEventListener('click', ()=>{
+			window.open("https://github.com/Moaaz-Rafique")
+		})
+		document.getElementById('webdev').addEventListener('click', ()=>{
+			window.open("https://moaaz-portfolio-website.web.app/")
+		})
 	});
 	</script>
 </body>

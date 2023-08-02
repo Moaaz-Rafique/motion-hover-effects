@@ -1,15 +1,20 @@
-
-
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.out-links {
+  font-weight: bold;
+  cursor: alias;
 }
 
 
 body {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  color: #333;
+  color: #3D84C6;
   font-size: 0.85rem;
   line-height: 0.85rem;
   font-weight: 400;
@@ -34,7 +39,7 @@ h1 {
 }
 
 .body {
-  background-color: #b1a59f;
+  background-color: #000;
 }
 
 .app {
@@ -80,7 +85,7 @@ h1 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #333;
+  color: #3D84C6;
   text-decoration: none;
 }
 
@@ -120,7 +125,7 @@ h1 {
 .divider {
   width: 120px;
   height: 2px;
-  background-color: #333;
+  background-color: #3D84C6;
 }
 
 .divider.d2 {
@@ -164,15 +169,15 @@ h1 {
   display: inline-block;
   margin-right: 7px;
   margin-left: 7px;
-  color: #333;
+  color: #3D84C6;
   text-decoration: none;
 }
 
-.frame__demo--current{
+.frame__demo--current {
   text-decoration: underline;
 }
 
-.frame__demo:hover{
+.frame__demo:hover {
   text-decoration: underline;
 }
 
@@ -271,7 +276,7 @@ h1 {
   color: #333;
 }
 
-.frame__link.fl_1:hover{
+.frame__link.fl_1:hover {
   text-decoration: underline;
 }
 
